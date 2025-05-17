@@ -1,6 +1,5 @@
 * {
     margin: 0;
-
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
@@ -32,7 +31,7 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background: url(media/nepal-2184940_1920.jpg);
+    background: url(./assets/media/nepal-2184940_1920.jpg);
     background-size: cover;
     background-position: center;
     justify-content: space-between;
@@ -97,7 +96,7 @@ nav .navigation ul li a::after {
 
 nav .navigation ul li a.active,
 nav .navigation ul li a:hover {
-    color: rgba(255, 247, 0, 0.994);
+    color: rgba(229, 255, 0, 0.994);
 }
 
 nav .navigation ul li a:hover::after {
@@ -105,7 +104,7 @@ nav .navigation ul li a:hover::after {
 }
 
 #home {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.685), rgba(51, 51, 52, 0)), url(media/back2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.685), rgba(51, 51, 52, 0)), url(./assets/media/back2.jpg);
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -125,7 +124,7 @@ nav .navigation ul li a:hover::after {
     letter-spacing: 1px;
     color: transparent;
     -webkit-text-stroke: 1px white;
-    background: url(media/back.png);
+    background: url(./assets/media/back.png);
     -webkit-background-clip: text;
     background-position: 0 0;
     animation: back 20s linear infinite;
@@ -161,8 +160,6 @@ nav .navigation ul li a:hover::after {
     bottom: 20px;
     border-radius: 50px;
     cursor: pointer;
-
-
 }
 
 .scroll-down::before,
@@ -178,14 +175,12 @@ nav .navigation ul li a:hover::after {
     border-top: transparent;
     border-left: transparent;
     animation: scroll-down 1s ease-in-out infinite;
-
 }
 
 .scroll-down::after {
     top: 40%;
     animation-delay: .3s;
     background-size: cover;
-
 }
 
 @keyframes scroll-down {
@@ -245,7 +240,6 @@ nav .navigation ul li a:hover::after {
     height: auto;
     overflow: hidden;
     margin: auto;
-
 }
 
 figure {
@@ -345,11 +339,10 @@ figure {
     }
 }
 
-
 .footerContainer {
     width: 100%;
     padding: 2px 2px 2px;
-    background: linear-gradient(rgba(11, 3, 161, 0.685), rgba(3, 123, 171, 0.688)), url(media/pencils-2782840_1920.jpg);
+    background: linear-gradient(rgba(11, 3, 161, 0.685), rgba(3, 123, 171, 0.688)), url(./assets/media/pencils-2782840_1920.jpg);
 }
 
 .socialIcons {
@@ -428,8 +421,115 @@ figure {
     margin: 0px 5px;
 }
 
+/* Project Page Styles */
+#project h2 {
+    color: white;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    background: url(./assets/media/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+    padding-top: 50px;
+}
 
+#project {
+    padding: 8vw 18vw 8vw 18vw;
+    text-align: center;
+}
 
+#project .project-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 2rem;
+    margin-top: 50px;
+}
+
+#project .projects {
+    text-align: center;
+    background: #F9F9FF;
+    height: 100%;
+}
+
+#project .projects img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Team Page Styles */
+#team h2 {
+    color: white;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    background: url(./assets/media/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+    padding-top: 50px;
+}
+
+#team {
+    padding: 8vw 12vw 8vw 12vw;
+    text-align: center;
+}
+
+#team p {
+    color: white;
+    font-size: 1.2rem;
+    padding-top: 10px;
+}
+
+#team .team-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 8rem;
+    margin-top: 50px;
+}
+
+#team .teams {
+    text-align: center;
+    background: #F9F9FF;
+    height: 100%;
+}
+
+#team .teams img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Resources Page Styles */
+#resource h2 {
+    color: white;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    background: url(./assets/media/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+    padding-top: 50px;
+}
+
+#resource {
+    padding: 8vw 8vw 8vw 8vw;
+    text-align: center;
+}
+
+#resource p {
+    padding-top: 80px;
+    color: white;
+}
+
+/* Media Queries */
 @media (max-width: 769px) {
     .footerNav ul {
         flex-direction: column;
@@ -512,7 +612,7 @@ figure {
     }
 
     #home {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.685), rgba(51, 51, 52, 0)), url(media/back2.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.685), rgba(51, 51, 52, 0)), url(./assets/media/back2.jpg);
         width: 100%;
         height: 100vh;
         background-size: cover;
@@ -525,7 +625,6 @@ figure {
         padding-bottom: 430px;
         box-shadow: 2px 2px 10px rgb(35, 35, 35);
     }
-
 }
 
 @media (max-width: 475px) {
@@ -533,7 +632,7 @@ figure {
         display: flex;
         flex-direction: row;
         align-items: center;
-        background: url(media/nepal-2184940_1920.jpg);
+        background: url(./assets/media/nepal-2184940_1920.jpg);
         background-size: cover;
         background-position: center;
         justify-content: space-between;
@@ -554,7 +653,7 @@ figure {
         letter-spacing: 1px;
         color: transparent;
         -webkit-text-stroke: 1px white;
-        background: url(media/back.png);
+        background: url(./assets/media/back.png);
         -webkit-background-clip: text;
         background-position: 0 0;
         animation: back 20s linear infinite;
@@ -677,119 +776,4 @@ figure {
         color: white;
         font-size: 0.6rem;
     }
-}
-
-
-/* projects */
-
-
-#project h2 {
-    color: white;
-    font-size: 2.5rem;
-    letter-spacing: 1px;
-    color: transparent;
-    -webkit-text-stroke: 1px white;
-    background: url(media/back.png);
-    -webkit-background-clip: text;
-    background-position: 0 0;
-    animation: back 20s linear infinite;
-    padding-top: 50px;
-}
-
-#project {
-    padding: 8vw 18vw 8vw 18vw;
-    text-align: center;
-}
-
-#project .project-box {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 2rem;
-    margin-top: 50px;
-}
-
-#project .projects {
-    text-align: center;
-    background: #F9F9FF;
-    height: 100%;
-}
-
-#project .projects img {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-}
-
-
-/* Team */
-
-#team h2 {
-    color: white;
-    font-size: 2.5rem;
-    letter-spacing: 1px;
-    color: transparent;
-    -webkit-text-stroke: 1px white;
-    background: url(media/back.png);
-    -webkit-background-clip: text;
-    background-position: 0 0;
-    animation: back 20s linear infinite;
-    padding-top: 50px;
-}
-
-#team {
-    padding: 8vw 12vw 8vw 12vw;
-    text-align: center;
-}
-
-#team p {
-    color: white;
-    font-size: 1.2rem;
-    padding-top: 10px;
-}
-
-#team .team-box {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 8rem;
-    margin-top: 50px;
-}
-
-#team .teams {
-    text-align: center;
-    background: #F9F9FF;
-    height: 100%;
-}
-
-#team .teams img {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-}
-
-
-/* resources */
-
-#resource h2 {
-    color: white;
-    font-size: 2.5rem;
-    letter-spacing: 1px;
-    color: transparent;
-    -webkit-text-stroke: 1px white;
-    background: url(media/back.png);
-    -webkit-background-clip: text;
-    background-position: 0 0;
-    animation: back 20s linear infinite;
-    padding-top: 50px;
-}
-
-#resource {
-    padding: 8vw 8vw 8vw 8vw;
-    text-align: center;
-}
-
-#resource p {
-    padding-top: 80px;
-    color: white;
 }
